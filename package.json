@@ -1,0 +1,18 @@
+{
+  "name": "if-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "author": "Fabian Salamanca, Adrian Calderón, Elmer Hanccoccallo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.1"
+  }
+}
