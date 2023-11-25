@@ -1,0 +1,775 @@
+<div class="container">
+  <div class="row mt-5">
+    <h2>Editar Informe Financiero - {{informe.Num_inf}}</h2>
+    <form action="/informes_edit/{{informe.Num_inf}}" method="post">
+      <div class="mb-3">
+        <label for="Num_inf" class="form-label">Num_inf</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Num_inf"
+          name="Num_inf"
+          value="{{informe.Num_inf}}"
+          required disabled
+        />
+      </div>
+      <div class="mb-3">
+        <label for="EfeEquiDeEfe" class="form-label">EfeEquiDeEfe</label>
+        <input
+          type="text"
+          class="form-control"
+          id="EfeEquiDeEfe"
+          name="EfeEquiDeEfe"
+          value="{{informe.EfeEquiDeEfe}}"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="InvFin" class="form-label">InvFin</label>
+        <input
+          type="text"
+          class="form-control"
+          id="InvFin"
+          name="InvFin"
+          value="{{informe.InvFin}}"
+          required
+        />
+      </div>
+
+      <!-- CueCobCom -->
+      <div class="mb-3">
+        <label for="CueCobCom" class="form-label">CueCobCom</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CueCobCom"
+          name="CueCobCom"
+          value="{{informe.CueCobCom}}"
+          required
+        />
+      </div>
+
+      <!-- CueCobAso -->
+      <div class="mb-3">
+        <label for="CueCobAso" class="form-label">CueCobAso</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CueCobAso"
+          name="CueCobAso"
+          value="{{informe.CueCobAso}}"
+          required
+        />
+      </div>
+
+      <!-- CueCobRel -->
+      <div class="mb-3">
+        <label for="CueCobRel" class="form-label">CueCobRel</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CueCobRel"
+          name="CueCobRel"
+          value="{{informe.CueCobRel}}"
+          required
+        />
+      </div>
+
+      <!-- CueCobTer -->
+      <div class="mb-3">
+        <label for="CueCobTer" class="form-label">CueCobTer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CueCobTer"
+          name="CueCobTer"
+          value="{{informe.CueCobTer}}"
+          required
+        />
+      </div>
+
+      <!-- EstCtaDud -->
+      <div class="mb-3">
+        <label for="EstCtaDud" class="form-label">EstCtaDud</label>
+        <input
+          type="text"
+          class="form-control"
+          id="EstCtaDud"
+          name="EstCtaDud"
+          value="{{informe.EstCtaDud}}"
+          required
+        />
+      </div>
+
+      <!-- Mer -->
+      <div class="mb-3">
+        <label for="Mer" class="form-label">Mer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Mer"
+          name="Mer"
+          value="{{informe.Mer}}"
+          required
+        />
+      </div>
+
+      <!-- ProTer -->
+      <div class="mb-3">
+        <label for="ProTer" class="form-label">ProTer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ProTer"
+          name="ProTer"
+          value="{{informe.ProTer}}"
+          required
+        />
+      </div>
+
+      <!-- SubDeseDes -->
+      <div class="mb-3">
+        <label for="SubDeseDes" class="form-label">SubDeseDes</label>
+        <input
+          type="text"
+          class="form-control"
+          id="SubDeseDes"
+          name="SubDeseDes"
+          value="{{informe.SubDeseDes}}"
+          required
+        />
+      </div>
+
+      <!-- ProdEnPro -->
+      <div class="mb-3">
+        <label for="ProdEnPro" class="form-label">ProdEnPro</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ProdEnPro"
+          name="ProdEnPro"
+          value="{{informe.ProdEnPro}}"
+          required
+        />
+      </div>
+
+      <!-- MatPri -->
+      <div class="mb-3">
+        <label for="MatPri" class="form-label">MatPri</label>
+        <input
+          type="text"
+          class="form-control"
+          id="MatPri"
+          name="MatPri"
+          value="{{informe.MatPri}}"
+          required
+        />
+      </div>
+
+      <!-- MatAuxSumRep -->
+      <div class="mb-3">
+        <label for="MatAuxSumRep" class="form-label">MatAuxSumRep</label>
+        <input
+          type="text"
+          class="form-control"
+          id="MatAuxSumRep"
+          name="MatAuxSumRep"
+          value="{{informe.MatAuxSumRep}}"
+          required
+        />
+      </div>
+
+      <!-- EnvEmb -->
+      <div class="mb-3">
+        <label for="EnvEmb" class="form-label">EnvEmb</label>
+        <input
+          type="text"
+          class="form-control"
+          id="EnvEmb"
+          name="EnvEmb"
+          value="{{informe.EnvEmb}}"
+          required
+        />
+      </div>
+
+      <!-- InvPorRec -->
+      <div class="mb-3">
+        <label for="InvPorRec" class="form-label">InvPorRec</label>
+        <input
+          type="text"
+          class="form-control"
+          id="InvPorRec"
+          name="InvPorRec"
+          value="{{informe.InvPorRec}}"
+          required
+        />
+      </div>
+
+      <!-- DesDeInv -->
+      <div class="mb-3">
+        <label for="DesDeInv" class="form-label">DesDeInv</label>
+        <input
+          type="text"
+          class="form-control"
+          id="DesDeInv"
+          name="DesDeInv"
+          value="{{informe.DesDeInv}}"
+          required
+        />
+      </div>
+
+      <!-- ActNoCtes -->
+      <div class="mb-3">
+        <label for="ActNoCtes" class="form-label">ActNoCtes</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ActNoCtes"
+          name="ActNoCtes"
+          value="{{informe.ActNoCtes}}"
+          required
+        />
+      </div>
+
+      <!-- OtrActCor -->
+      <div class="mb-3">
+        <label for="OtrActCor" class="form-label">OtrActCor</label>
+        <input
+          type="text"
+          class="form-control"
+          id="OtrActCor"
+          name="OtrActCor"
+          value="{{informe.OtrActCor}}"
+          required
+        />
+      </div>
+
+      <!-- InvMob -->
+      <div class="mb-3">
+        <label for="InvMob" class="form-label">InvMob</label>
+        <input
+          type="text"
+          class="form-control"
+          id="InvMob"
+          name="InvMob"
+          value="{{informe.InvMob}}"
+          required
+        />
+      </div>
+
+      <!-- ProInv -->
+      <div class="mb-3">
+        <label for="ProInv" class="form-label">ProInv</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ProInv"
+          name="ProInv"
+          value="{{informe.ProInv}}"
+          required
+        />
+      </div>
+
+      <!-- GasVen -->
+      <div class="mb-3">
+        <label for="GasVen" class="form-label">GasVen</label>
+        <input
+          type="text"
+          class="form-control"
+          id="GasVen"
+          name="GasVen"
+          value="{{informe.GasVen}}"
+          required
+        />
+      </div>
+
+      <!-- ActDerdeUso -->
+      <div class="mb-3">
+        <label for="ActDerdeUso" class="form-label">ActDerdeUso</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ActDerdeUso"
+          name="ActDerdeUso"
+          value="{{informe.ActDerdeUso}}"
+          required
+        />
+      </div>
+
+      <!-- ProPlaEqui -->
+      <div class="mb-3">
+        <label for="ProPlaEqui" class="form-label">ProPlaEqui</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ProPlaEqui"
+          name="ProPlaEqui"
+          value="{{informe.ProPlaEqui}}"
+          required
+        />
+      </div>
+
+      <!-- DepPee -->
+      <div class="mb-3">
+        <label for="DepPee" class="form-label">DepPee</label>
+        <input
+          type="text"
+          class="form-control"
+          id="DepPee"
+          name="DepPee"
+          value="{{informe.DepPee}}"
+          required
+        />
+      </div>
+
+      <!-- Inta -->
+      <div class="mb-3">
+        <label for="Inta" class="form-label">Inta</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Inta"
+          name="Inta"
+          value="{{informe.Inta}}"
+          required
+        />
+      </div>
+
+      <!-- ActBio -->
+      <div class="mb-3">
+        <label for="ActBio" class="form-label">ActBio</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ActBio"
+          name="ActBio"
+          value="{{informe.ActBio}}"
+          required
+        />
+      </div>
+
+      <!-- DepActBioAmoAcu -->
+      <div class="mb-3">
+        <label for="DepActBioAmoAcu" class="form-label">DepActBioAmoAcu</label>
+        <input
+          type="text"
+          class="form-control"
+          id="DepActBioAmoAcu"
+          name="DepActBioAmoAcu"
+          value="{{informe.DepActBioAmoAcu}}"
+          required
+        />
+      </div>
+
+      <!-- ActDif -->
+      <div class="mb-3">
+        <label for="ActDif" class="form-label">ActDif</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ActDif"
+          name="ActDif"
+          value="{{informe.ActDif}}"
+          required
+        />
+      </div>
+
+      <!-- DesActInm -->
+      <div class="mb-3">
+        <label for="DesActInm" class="form-label">DesActInm</label>
+        <input
+          type="text"
+          class="form-control"
+          id="DesActInm"
+          name="DesActInm"
+          value="{{informe.DesActInm}}"
+          required
+        />
+      </div>
+
+      <!-- OtrActNoCor -->
+      <div class="mb-3">
+        <label for="OtrActNoCor" class="form-label">OtrActNoCor</label>
+        <input
+          type="text"
+          class="form-control"
+          id="OtrActNoCor"
+          name="OtrActNoCor"
+          value="{{informe.OtrActNoCor}}"
+          required
+        />
+      </div>
+
+      <!-- TotActNet -->
+      <div class="mb-3">
+        <label for="TotActNet" class="form-label">TotActNet</label>
+        <input
+          type="text"
+          class="form-control"
+          id="TotActNet"
+          name="TotActNet"
+          value="{{informe.TotActNet}}"
+          required
+        />
+      </div>
+
+      <!-- SobBan -->
+      <div class="mb-3">
+        <label for="SobBan" class="form-label">SobBan</label>
+        <input
+          type="text"
+          class="form-control"
+          id="SobBan"
+          name="SobBan"
+          value="{{informe.SobBan}}"
+          required
+        />
+      </div>
+
+      <!-- TriApoSisPenSalPorPagar -->
+      <div class="mb-3">
+        <label
+          for="TriApoSisPenSalPorPagar"
+          class="form-label"
+        >TriApoSisPenSalPorPagar</label>
+        <input
+          type="text"
+          class="form-control"
+          id="TriApoSisPenSalPorPagar"
+          name="TriApoSisPenSalPorPagar"
+          value="{{informe.TriApoSisPenSalPorPagar}}"
+          required
+        />
+      </div>
+
+      <!-- RemPatPorPag -->
+      <div class="mb-3">
+        <label for="RemPatPorPag" class="form-label">RemPatPorPag</label>
+        <input
+          type="text"
+          class="form-control"
+          id="RemPatPorPag"
+          name="RemPatPorPag"
+          value="{{informe.RemPatPorPag}}"
+          required
+        />
+      </div>
+
+      <!-- CuePagComTerc -->
+      <div class="mb-3">
+        <label for="CuePagComTerc" class="form-label">CuePagComTerc</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CuePagComTerc"
+          name="CuePagComTerc"
+          value="{{informe.CuePagComTerc}}"
+          required
+        />
+      </div>
+
+      <!-- CuePagComRel -->
+      <div class="mb-3">
+        <label for="CuePagComRel" class="form-label">CuePagComRel</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CuePagComRel"
+          name="CuePagComRel"
+          value="{{informe.CuePagComRel}}"
+          required
+        />
+      </div>
+
+      <!-- CuePagAccDir -->
+      <div class="mb-3">
+        <label for="CuePagAccDir" class="form-label">CuePagAccDir</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CuePagAccDir"
+          name="CuePagAccDir"
+          value="{{informe.CuePagAccDir}}"
+          required
+        />
+      </div>
+
+      <!-- CuePagDivRel -->
+      <div class="mb-3">
+        <label for="CuePagDivRel" class="form-label">CuePagDivRel</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CuePagDivRel"
+          name="CuePagDivRel"
+          value="{{informe.CuePagDivRel}}"
+          required
+        />
+      </div>
+
+      <!-- CuePagDivTer -->
+      <div class="mb-3">
+        <label for="CuePagDivTer" class="form-label">CuePagDivTer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CuePagDivTer"
+          name="CuePagDivTer"
+          value="{{informe.CuePagDivTer}}"
+          required
+        />
+      </div>
+
+      <!-- OblFin -->
+      <div class="mb-3">
+        <label for="OblFin" class="form-label">OblFin</label>
+        <input
+          type="text"
+          class="form-control"
+          id="OblFin"
+          name="OblFin"
+          value="{{informe.OblFin}}"
+          required
+        />
+      </div>
+
+      <!-- PagDif -->
+      <div class="mb-3">
+        <label for="PagDif" class="form-label">PagDif</label>
+        <input
+          type="text"
+          class="form-control"
+          id="PagDif"
+          name="PagDif"
+          value="{{informe.PagDif}}"
+          required
+        />
+      </div>
+
+      <!-- Pro -->
+      <div class="mb-3">
+        <label for="Pro" class="form-label">Pro</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Pro"
+          name="Pro"
+          value="{{informe.Pro}}"
+          required
+        />
+      </div>
+
+      <!-- Cap -->
+      <div class="mb-3">
+        <label for="Cap" class="form-label">Cap</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Cap"
+          name="Cap"
+          value="{{informe.Cap}}"
+          required
+        />
+      </div>
+
+      <!-- TotPas -->
+      <div class="mb-3">
+        <label for="TotPas" class="form-label">TotPas</label>
+        <input
+          type="text"
+          class="form-control"
+          id="TotPas"
+          name="TotPas"
+          value="{{informe.TotPas}}"
+          required
+        />
+      </div>
+
+      <!-- AccInv -->
+      <div class="mb-3">
+        <label for="AccInv" class="form-label">AccInv</label>
+        <input
+          type="text"
+          class="form-control"
+          id="AccInv"
+          name="AccInv"
+          value="{{informe.AccInv}}"
+          required
+        />
+      </div>
+
+      <!-- CapAdiPos -->
+      <div class="mb-3">
+        <label for="CapAdiPos" class="form-label">CapAdiPos</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CapAdiPos"
+          name="CapAdiPos"
+          value="{{informe.CapAdiPos}}"
+          required
+        />
+      </div>
+
+      <!-- CapAdiNeg -->
+      <div class="mb-3">
+        <label for="CapAdiNeg" class="form-label">CapAdiNeg</label>
+        <input
+          type="text"
+          class="form-control"
+          id="CapAdiNeg"
+          name="CapAdiNeg"
+          value="{{informe.CapAdiNeg}}"
+          required
+        />
+      </div>
+
+      <!-- ResNoRea -->
+      <div class="mb-3">
+        <label for="ResNoRea" class="form-label">ResNoRea</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ResNoRea"
+          name="ResNoRea"
+          value="{{informe.ResNoRea}}"
+          required
+        />
+      </div>
+
+      <!-- ExcDeEva -->
+      <div class="mb-3">
+        <label for="ExcDeEva" class="form-label">ExcDeEva</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ExcDeEva"
+          name="ExcDeEva"
+          value="{{informe.ExcDeEva}}"
+          required
+        />
+      </div>
+
+      <!-- ResBruDeUti -->
+      <div class="mb-3">
+        <label for="ResBruDeUti" class="form-label">ResBruDeUti</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ResBruDeUti"
+          name="ResBruDeUti"
+          value="{{informe.ResBruDeUti}}"
+          required
+        />
+      </div>
+
+      <!-- GasAdm -->
+      <div class="mb-3">
+        <label for="GasAdm" class="form-label">GasAdm</label>
+        <input
+          type="text"
+          class="form-control"
+          id="GasAdm"
+          name="GasAdm"
+          value="{{informe.GasAdm}}"
+          required
+        />
+      </div>
+
+      <!-- Res -->
+      <div class="mb-3">
+        <label for="Res" class="form-label">Res</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Res"
+          name="Res"
+          value="{{informe.Res}}"
+          required
+        />
+      </div>
+
+      <!-- ResAcuPos -->
+      <div class="mb-3">
+        <label for="ResAcuPos" class="form-label">ResAcuPos</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ResAcuPos"
+          name="ResAcuPos"
+          value="{{informe.ResAcuPos}}"
+          required
+        />
+      </div>
+
+      <!-- ResAcuNeg -->
+      <div class="mb-3">
+        <label for="ResAcuNeg" class="form-label">ResAcuNeg</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ResAcuNeg"
+          name="ResAcuNeg"
+          value="{{informe.ResAcuNeg}}"
+          required
+        />
+      </div>
+
+      <!-- UtilEjer -->
+      <div class="mb-3">
+        <label for="UtilEjer" class="form-label">UtilEjer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="UtilEjer"
+          name="UtilEjer"
+          value="{{informe.UtilEjer}}"
+          required
+        />
+      </div>
+
+      <!-- PerEje -->
+      <div class="mb-3">
+        <label for="PerEje" class="form-label">PerEje</label>
+        <input
+          type="text"
+          class="form-control"
+          id="PerEje"
+          name="PerEje"
+          value="{{informe.PerEje}}"
+          required
+        />
+      </div>
+
+      <!-- TotPat -->
+      <div class="mb-3">
+        <label for="TotPat" class="form-label">TotPat</label>
+        <input
+          type="text"
+          class="form-control"
+          id="TotPat"
+          name="TotPat"
+          value="{{informe.TotPat}}"
+          required
+        />
+      </div>
+
+      <!-- TotPatPas -->
+      <div class="mb-3">
+        <label for="TotPatPas" class="form-label">TotPatPas</label>
+        <input
+          type="text"
+          class="form-control"
+          id="TotPatPas"
+          name="TotPatPas"
+          value="{{informe.TotPatPas}}"
+          required
+        />
+      </div>
+
+      <div class="form-group mt-4 d-grid gap-2">
+        <button type="submit" class="btn btn-primary">Actualizar Informe</button>
+      </div>
+    </form>
+  </div>
+</div>

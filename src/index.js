@@ -4,6 +4,7 @@ import { engine } from 'express-handlebars';
 import {join, dirname} from 'path'
 import {fileURLToPath} from 'url'
 import comprobanteRoutes from './routes/comprobante.routes.js'
+import informeRoutes from './routes/informe.routes.js'
 import { registerHandlebarsHelpers } from './handlebars-helpers.js';
 
 
@@ -31,6 +32,7 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 app.use(comprobanteRoutes); 
+app.use(informeRoutes)
 
 //public
 app.use(express.static(join(__dirname, 'public')));

@@ -2,11 +2,14 @@
   <div class="row">
     <div class="col-md-10 mx-auto">
       <div class="card text-center">
-        <div class="car-header">
+        <div class="card-header">
           <h3 class="text-uppercase">Editar Comprobante</h3>
         </div>
         <div class="card-body">
-          <form action="/comprobantes_edit/{{comprobante.id}}" method="post">
+          <form
+            action="/comprobantes_edit/{{comprobante.Num_com}}"
+            method="post"
+          >
             <div class="input-group mt-2">
               <label for="" class="input-group-text">Número de Comprobante</label>
               <input
@@ -19,7 +22,8 @@
               />
             </div>
             <div class="input-group mt-2">
-              <label for="tipoDocumento" class="input-group-text">Tipo de Documento</label>
+              <label for="tipoDocumento" class="input-group-text">Tipo de
+                Documento</label>
               <select
                 class="form-control"
                 id="Tip_Doc"
@@ -33,7 +37,13 @@
             </div>
             <div class="input-group mt-2">
               <label for="origen" class="input-group-text">Origen</label>
-              <select class="form-control" id="Ori" name="Ori" value="{{comprobante.Ori}}" required>
+              <select
+                class="form-control"
+                id="Ori"
+                name="Ori"
+                value="{{comprobante.Ori}}"
+                required
+              >
                 <option value="Venta">Venta</option>
                 <option value="Compra">Compra</option>
               </select>
@@ -43,9 +53,9 @@
               <input
                 type="date"
                 class="form-control"
-                id="fec"
-                name="fec"
-                value="{{comprobante.fec}}"
+                id="Fec"
+                name="Fec"
+                value="{{formatDate comprobante.Fec}}"
                 required
               />
             </div>
@@ -61,6 +71,21 @@
                 required
               />
             </div>
+            <div class="input-group mt-2">
+              <label for="numInforme" class="input-group-text">Número de Informe Financiero</label>
+              <select
+                class="form-control"
+                id="Num_Inf" 
+                name="Num_Inf"
+                value="{{comprobante.Num_Inf}}"
+                required
+              >
+
+                {{#each numerosInformes}}
+                  <option value="{{this.num_inf}}">{{this.num_inf}}</option>
+                {{/each}}
+              </select>
+            </div>
             <div class="form-group mt-4 d-grid gap-2">
               <button>
                 Crear Comprobante
@@ -72,3 +97,14 @@
     </div>
   </div>
 </div>
+
+<script>
+  function formatDateForInput(dateString) { const dateObject = new
+  Date(dateString); const year = dateObject.getFullYear(); const month =
+  String(dateObject.getMonth() + 1).padStart(2, '0'); const day =
+  String(dateObject.getDate()).padStart(2, '0'); // return
+  `${year}-${month}-${day}`; } document.addEventListener('DOMContentLoaded',
+  function() { const fechaInput = document.getElementById('Fec'); // if
+  (fechaInput) { fechaInput.value = formatDateForInput("{{comprobante.Fec}}"); }
+  });
+</script>

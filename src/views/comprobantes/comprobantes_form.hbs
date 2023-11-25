@@ -56,6 +56,20 @@
                 required
               />
             </div>
+            <div class="input-group mt-2">
+              <label for="numInforme" class="input-group-text">Número de Informe Financiero</label>
+              <select
+                class="form-control"
+                id="Num_Inf" 
+                name="Num_Inf"
+                required
+              >
+
+                {{#each numerosInformes}}
+                  <option value="{{this.num_inf}}">{{this.num_inf}}</option>
+                {{/each}}
+              </select>
+            </div>
             <div class="form-group mt-4 d-grid gap-2">
               <button>
                 Crear Comprobante
@@ -67,3 +81,20 @@
     </div>
   </div>
 </div>
+
+<script>
+  function formatDateForInput(dateString) {
+    const dateObject = new Date(dateString);
+    const year = dateObject.getFullYear();
+    const month = String(dateObject.getMonth() + 1).padStart(2, '0'); 
+    const day = String(dateObject.getDate()).padStart(2, '0'); // 
+    return `${year}-${month}-${day}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const fechaInput = document.getElementById('Fec'); // 
+    if (fechaInput) {
+      fechaInput.value = formatDateForInput("{{comprobante.Fec}}");
+    }
+  });
+</script>
