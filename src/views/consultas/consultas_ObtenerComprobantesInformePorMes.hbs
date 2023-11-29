@@ -1,0 +1,70 @@
+<div class="container mt-4">
+    <h3>Consulta de Comprobantes por Mes</h3>
+
+    <form action="/consultas/ObtenerComprobantesInformePorMes" method="get">
+        <div class="form-group">
+            <label for="mes">Ingrese el mes (número):</label>
+            <input type="number" class="form-control" id="mes" name="mes" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Consultar</button>
+    </form>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>Número de Comprobante</th>
+                <th>Tipo de Documento</th>
+                <th>Origen</th>
+                <th>Fecha</th>
+                <th>Monto Total</th>
+                <th>Número de Informe</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#if result}}
+            {{#each result}}
+            <tr>
+                <td>{{Num_com}}</td>
+                <td>{{Tip_Doc}}</td>
+                <td>{{Ori}}</td>
+                <td>{{formatDate Fec}}</td>
+                <td>{{Mon_Tot}}</td>
+                <td>{{Num_Inf}}</td>
+            </tr>
+            {{/each}}
+            {{else}}
+            <tr>
+                <td colspan="10">No hay resultados para el mes especificado.</td>
+            </tr>
+            {{/if}}
+        </tbody>
+    </table>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>Total Activos Netos</th>
+                <th>Total Pasivos</th>
+                <th>Total Patrimonio</th>
+                <th>Total Patrimonio y Pasivos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#if totales}}
+            {{#each totales}}   
+            <tr>
+                <td>{{TotActNet}}</td>
+                <td>{{TotPas}}</td>
+                <td>{{TotPat}}</td>
+                <td>{{TotPatPas}}</td>
+            </tr>
+            {{/each}}
+            {{else}}
+            <tr>
+                <td colspan="10">No hay resultados para el mes especificado.</td>
+            </tr>
+            {{/if}}
+        </tbody>
+    </table>
+
+</div>

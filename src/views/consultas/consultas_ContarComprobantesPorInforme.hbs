@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <h3>Tabla de Comprobantes por Informe Financiero</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Número de Informe Financiero</th>
+                <th>Número de Comprobantes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each result}}
+                <tr>
+                    <td>{{this.Num_inf}}</td>
+                    <td>{{this.Num_Comprobantes}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

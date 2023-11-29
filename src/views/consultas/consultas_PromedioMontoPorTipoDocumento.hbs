@@ -1,0 +1,21 @@
+<h3>Promedio Mensual por tipo de Documento</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mes</th>
+            <th>Ori</th>
+            <th>Tipo de Documento</th>
+            <th>Promedio Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>
+                <td>{{this.Mes}}</td>
+                <td>{{this.Ori}}</td>
+                <td>{{this.Tip_Doc}}</td>
+                <td>{{this.Promedio_Monto}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

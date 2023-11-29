@@ -5,6 +5,7 @@ import {join, dirname} from 'path'
 import {fileURLToPath} from 'url'
 import comprobanteRoutes from './routes/comprobante.routes.js'
 import informeRoutes from './routes/informe.routes.js'
+import consultasRoutes from './routes/consultas.routes.js'
 import { registerHandlebarsHelpers } from './handlebars-helpers.js';
 
 
@@ -33,6 +34,7 @@ app.get('/', (req, res) => {
 })
 app.use(comprobanteRoutes); 
 app.use(informeRoutes)
+app.use(consultasRoutes);
 
 //public
 app.use(express.static(join(__dirname, 'public')));

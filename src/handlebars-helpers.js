@@ -8,5 +8,4 @@ export function registerHandlebarsHelpers() {
 }
 
 
-// Llama a esta función para registrar el helper
 registerHandlebarsHelpers();

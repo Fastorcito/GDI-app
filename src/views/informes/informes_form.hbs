@@ -1,78 +1,89 @@
 <div class="container mt-5">
   <div class="row">
-    <h2>Editar Informe Financiero - {{informe.Num_inf}}</h2>
-    <form action="/informes_edit/{{informe.Num_inf}}" method="post">
+    <h2>Crear nuevo informe financiero</h2>
+    <form action="/informes_form" method="post">
+
+      <div class="mb-3">
+        <label for="Num_inf" class="form-label">Número de informe</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Num_inf"
+          name="Num_inf"
+          value="{{numeroInforme}}"
+          required
+          readonly
+        />
+      </div>
+
       <div class="mb-3">
         <label for="EfeEquiDeEfe" class="form-label">EfeEquiDeEfe</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="EfeEquiDeEfe"
           name="EfeEquiDeEfe"
-          value="{{informe.EfeEquiDeEfe}}"
+          value="0"
           required
         />
       </div>
+
       <div class="mb-3">
         <label for="InvFin" class="form-label">InvFin</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="InvFin"
           name="InvFin"
-          value="{{informe.InvFin}}"
+          value="0"
           required
         />
       </div>
 
-      <!-- CueCobCom -->
       <div class="mb-3">
         <label for="CueCobCom" class="form-label">CueCobCom</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CueCobCom"
           name="CueCobCom"
-          value="{{informe.CueCobCom}}"
+          value="0"
           required
         />
       </div>
 
-      <!-- CueCobAso -->
       <div class="mb-3">
         <label for="CueCobAso" class="form-label">CueCobAso</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CueCobAso"
           name="CueCobAso"
-          value="{{informe.CueCobAso}}"
+          value="0"
           required
         />
       </div>
 
-      <!-- CueCobRel -->
       <div class="mb-3">
         <label for="CueCobRel" class="form-label">CueCobRel</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CueCobRel"
           name="CueCobRel"
-          value="{{informe.CueCobRel}}"
+          value="0"
           required
         />
       </div>
 
-      <!-- CueCobTer -->
       <div class="mb-3">
         <label for="CueCobTer" class="form-label">CueCobTer</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CueCobTer"
           name="CueCobTer"
-          value="{{informe.CueCobTer}}"
+          value="0"
           required
         />
       </div>
@@ -81,11 +92,11 @@
       <div class="mb-3">
         <label for="EstCtaDud" class="form-label">EstCtaDud</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="EstCtaDud"
           name="EstCtaDud"
-          value="{{informe.EstCtaDud}}"
+          value="0"
           required
         />
       </div>
@@ -94,11 +105,11 @@
       <div class="mb-3">
         <label for="Mer" class="form-label">Mer</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="Mer"
           name="Mer"
-          value="{{informe.Mer}}"
+          value="0"
           required
         />
       </div>
@@ -107,11 +118,11 @@
       <div class="mb-3">
         <label for="ProTer" class="form-label">ProTer</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ProTer"
           name="ProTer"
-          value="{{informe.ProTer}}"
+          value="0"
           required
         />
       </div>
@@ -120,11 +131,11 @@
       <div class="mb-3">
         <label for="SubDeseDes" class="form-label">SubDeseDes</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="SubDeseDes"
           name="SubDeseDes"
-          value="{{informe.SubDeseDes}}"
+          value="0"
           required
         />
       </div>
@@ -133,11 +144,11 @@
       <div class="mb-3">
         <label for="ProdEnPro" class="form-label">ProdEnPro</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ProdEnPro"
           name="ProdEnPro"
-          value="{{informe.ProdEnPro}}"
+          value="0"
           required
         />
       </div>
@@ -146,11 +157,11 @@
       <div class="mb-3">
         <label for="MatPri" class="form-label">MatPri</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="MatPri"
           name="MatPri"
-          value="{{informe.MatPri}}"
+          value="0"
           required
         />
       </div>
@@ -159,11 +170,11 @@
       <div class="mb-3">
         <label for="MatAuxSumRep" class="form-label">MatAuxSumRep</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="MatAuxSumRep"
           name="MatAuxSumRep"
-          value="{{informe.MatAuxSumRep}}"
+          value="0"
           required
         />
       </div>
@@ -172,11 +183,11 @@
       <div class="mb-3">
         <label for="EnvEmb" class="form-label">EnvEmb</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="EnvEmb"
           name="EnvEmb"
-          value="{{informe.EnvEmb}}"
+          value="0"
           required
         />
       </div>
@@ -185,11 +196,11 @@
       <div class="mb-3">
         <label for="InvPorRec" class="form-label">InvPorRec</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="InvPorRec"
           name="InvPorRec"
-          value="{{informe.InvPorRec}}"
+          value="0"
           required
         />
       </div>
@@ -198,11 +209,11 @@
       <div class="mb-3">
         <label for="DesDeInv" class="form-label">DesDeInv</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="DesDeInv"
           name="DesDeInv"
-          value="{{informe.DesDeInv}}"
+          value="0"
           required
         />
       </div>
@@ -211,11 +222,11 @@
       <div class="mb-3">
         <label for="ActNoCtes" class="form-label">ActNoCtes</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ActNoCtes"
           name="ActNoCtes"
-          value="{{informe.ActNoCtes}}"
+          value="0"
           required
         />
       </div>
@@ -224,11 +235,11 @@
       <div class="mb-3">
         <label for="OtrActCor" class="form-label">OtrActCor</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="OtrActCor"
           name="OtrActCor"
-          value="{{informe.OtrActCor}}"
+          value="0"
           required
         />
       </div>
@@ -237,11 +248,11 @@
       <div class="mb-3">
         <label for="InvMob" class="form-label">InvMob</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="InvMob"
           name="InvMob"
-          value="{{informe.InvMob}}"
+          value="0"
           required
         />
       </div>
@@ -250,11 +261,11 @@
       <div class="mb-3">
         <label for="ProInv" class="form-label">ProInv</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ProInv"
           name="ProInv"
-          value="{{informe.ProInv}}"
+          value="0"
           required
         />
       </div>
@@ -263,11 +274,11 @@
       <div class="mb-3">
         <label for="GasVen" class="form-label">GasVen</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="GasVen"
           name="GasVen"
-          value="{{informe.GasVen}}"
+          value="0"
           required
         />
       </div>
@@ -276,11 +287,11 @@
       <div class="mb-3">
         <label for="ActDerdeUso" class="form-label">ActDerdeUso</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ActDerdeUso"
           name="ActDerdeUso"
-          value="{{informe.ActDerdeUso}}"
+          value="0"
           required
         />
       </div>
@@ -289,11 +300,11 @@
       <div class="mb-3">
         <label for="ProPlaEqui" class="form-label">ProPlaEqui</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ProPlaEqui"
           name="ProPlaEqui"
-          value="{{informe.ProPlaEqui}}"
+          value="0"
           required
         />
       </div>
@@ -302,11 +313,11 @@
       <div class="mb-3">
         <label for="DepPee" class="form-label">DepPee</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="DepPee"
           name="DepPee"
-          value="{{informe.DepPee}}"
+          value="0"
           required
         />
       </div>
@@ -315,11 +326,11 @@
       <div class="mb-3">
         <label for="Inta" class="form-label">Inta</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="Inta"
           name="Inta"
-          value="{{informe.Inta}}"
+          value="0"
           required
         />
       </div>
@@ -328,11 +339,11 @@
       <div class="mb-3">
         <label for="ActBio" class="form-label">ActBio</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ActBio"
           name="ActBio"
-          value="{{informe.ActBio}}"
+          value="0"
           required
         />
       </div>
@@ -341,11 +352,11 @@
       <div class="mb-3">
         <label for="DepActBioAmoAcu" class="form-label">DepActBioAmoAcu</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="DepActBioAmoAcu"
           name="DepActBioAmoAcu"
-          value="{{informe.DepActBioAmoAcu}}"
+          value="0"
           required
         />
       </div>
@@ -354,11 +365,11 @@
       <div class="mb-3">
         <label for="ActDif" class="form-label">ActDif</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ActDif"
           name="ActDif"
-          value="{{informe.ActDif}}"
+          value="0"
           required
         />
       </div>
@@ -367,11 +378,11 @@
       <div class="mb-3">
         <label for="DesActInm" class="form-label">DesActInm</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="DesActInm"
           name="DesActInm"
-          value="{{informe.DesActInm}}"
+          value="0"
           required
         />
       </div>
@@ -380,11 +391,11 @@
       <div class="mb-3">
         <label for="OtrActNoCor" class="form-label">OtrActNoCor</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="OtrActNoCor"
           name="OtrActNoCor"
-          value="{{informe.OtrActNoCor}}"
+          value="0"
           required
         />
       </div>
@@ -393,11 +404,11 @@
       <div class="mb-3">
         <label for="TotActNet" class="form-label">TotActNet</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="TotActNet"
           name="TotActNet"
-          value="{{informe.TotActNet}}"
+          value="0"
           required
         />
       </div>
@@ -406,11 +417,11 @@
       <div class="mb-3">
         <label for="SobBan" class="form-label">SobBan</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="SobBan"
           name="SobBan"
-          value="{{informe.SobBan}}"
+          value="0"
           required
         />
       </div>
@@ -422,11 +433,11 @@
           class="form-label"
         >TriApoSisPenSalPorPagar</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="TriApoSisPenSalPorPagar"
           name="TriApoSisPenSalPorPagar"
-          value="{{informe.TriApoSisPenSalPorPagar}}"
+          value="0"
           required
         />
       </div>
@@ -435,11 +446,11 @@
       <div class="mb-3">
         <label for="RemPatPorPag" class="form-label">RemPatPorPag</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="RemPatPorPag"
           name="RemPatPorPag"
-          value="{{informe.RemPatPorPag}}"
+          value="0"
           required
         />
       </div>
@@ -448,11 +459,11 @@
       <div class="mb-3">
         <label for="CuePagComTerc" class="form-label">CuePagComTerc</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CuePagComTerc"
           name="CuePagComTerc"
-          value="{{informe.CuePagComTerc}}"
+          value="0"
           required
         />
       </div>
@@ -461,11 +472,11 @@
       <div class="mb-3">
         <label for="CuePagComRel" class="form-label">CuePagComRel</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CuePagComRel"
           name="CuePagComRel"
-          value="{{informe.CuePagComRel}}"
+          value="0"
           required
         />
       </div>
@@ -474,11 +485,11 @@
       <div class="mb-3">
         <label for="CuePagAccDir" class="form-label">CuePagAccDir</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CuePagAccDir"
           name="CuePagAccDir"
-          value="{{informe.CuePagAccDir}}"
+          value="0"
           required
         />
       </div>
@@ -487,11 +498,11 @@
       <div class="mb-3">
         <label for="CuePagDivRel" class="form-label">CuePagDivRel</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CuePagDivRel"
           name="CuePagDivRel"
-          value="{{informe.CuePagDivRel}}"
+          value="0"
           required
         />
       </div>
@@ -500,11 +511,11 @@
       <div class="mb-3">
         <label for="CuePagDivTer" class="form-label">CuePagDivTer</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CuePagDivTer"
           name="CuePagDivTer"
-          value="{{informe.CuePagDivTer}}"
+          value="0"
           required
         />
       </div>
@@ -513,11 +524,11 @@
       <div class="mb-3">
         <label for="OblFin" class="form-label">OblFin</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="OblFin"
           name="OblFin"
-          value="{{informe.OblFin}}"
+          value="0"
           required
         />
       </div>
@@ -526,11 +537,11 @@
       <div class="mb-3">
         <label for="PagDif" class="form-label">PagDif</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="PagDif"
           name="PagDif"
-          value="{{informe.PagDif}}"
+          value="0"
           required
         />
       </div>
@@ -539,11 +550,11 @@
       <div class="mb-3">
         <label for="Pro" class="form-label">Pro</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="Pro"
           name="Pro"
-          value="{{informe.Pro}}"
+          value="0"
           required
         />
       </div>
@@ -552,11 +563,11 @@
       <div class="mb-3">
         <label for="Cap" class="form-label">Cap</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="Cap"
           name="Cap"
-          value="{{informe.Cap}}"
+          value="0"
           required
         />
       </div>
@@ -565,11 +576,11 @@
       <div class="mb-3">
         <label for="TotPas" class="form-label">TotPas</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="TotPas"
           name="TotPas"
-          value="{{informe.TotPas}}"
+          value="0"
           required
         />
       </div>
@@ -578,11 +589,11 @@
       <div class="mb-3">
         <label for="AccInv" class="form-label">AccInv</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="AccInv"
           name="AccInv"
-          value="{{informe.AccInv}}"
+          value="0"
           required
         />
       </div>
@@ -591,11 +602,11 @@
       <div class="mb-3">
         <label for="CapAdiPos" class="form-label">CapAdiPos</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CapAdiPos"
           name="CapAdiPos"
-          value="{{informe.CapAdiPos}}"
+          value="0"
           required
         />
       </div>
@@ -604,11 +615,11 @@
       <div class="mb-3">
         <label for="CapAdiNeg" class="form-label">CapAdiNeg</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="CapAdiNeg"
           name="CapAdiNeg"
-          value="{{informe.CapAdiNeg}}"
+          value="0"
           required
         />
       </div>
@@ -617,11 +628,11 @@
       <div class="mb-3">
         <label for="ResNoRea" class="form-label">ResNoRea</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ResNoRea"
           name="ResNoRea"
-          value="{{informe.ResNoRea}}"
+          value="0"
           required
         />
       </div>
@@ -630,11 +641,11 @@
       <div class="mb-3">
         <label for="ExcDeEva" class="form-label">ExcDeEva</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ExcDeEva"
           name="ExcDeEva"
-          value="{{informe.ExcDeEva}}"
+          value="0"
           required
         />
       </div>
@@ -643,11 +654,11 @@
       <div class="mb-3">
         <label for="ResBruDeUti" class="form-label">ResBruDeUti</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ResBruDeUti"
           name="ResBruDeUti"
-          value="{{informe.ResBruDeUti}}"
+          value="0"
           required
         />
       </div>
@@ -656,11 +667,11 @@
       <div class="mb-3">
         <label for="GasAdm" class="form-label">GasAdm</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="GasAdm"
           name="GasAdm"
-          value="{{informe.GasAdm}}"
+          value="0"
           required
         />
       </div>
@@ -669,11 +680,11 @@
       <div class="mb-3">
         <label for="Res" class="form-label">Res</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="Res"
           name="Res"
-          value="{{informe.Res}}"
+          value="0"
           required
         />
       </div>
@@ -682,11 +693,11 @@
       <div class="mb-3">
         <label for="ResAcuPos" class="form-label">ResAcuPos</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ResAcuPos"
           name="ResAcuPos"
-          value="{{informe.ResAcuPos}}"
+          value="0"
           required
         />
       </div>
@@ -695,11 +706,11 @@
       <div class="mb-3">
         <label for="ResAcuNeg" class="form-label">ResAcuNeg</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="ResAcuNeg"
           name="ResAcuNeg"
-          value="{{informe.ResAcuNeg}}"
+          value="0"
           required
         />
       </div>
@@ -708,11 +719,11 @@
       <div class="mb-3">
         <label for="UtilEjer" class="form-label">UtilEjer</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="UtilEjer"
           name="UtilEjer"
-          value="{{informe.UtilEjer}}"
+          value="0"
           required
         />
       </div>
@@ -721,11 +732,11 @@
       <div class="mb-3">
         <label for="PerEje" class="form-label">PerEje</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="PerEje"
           name="PerEje"
-          value="{{informe.PerEje}}"
+          value="0"
           required
         />
       </div>
@@ -734,11 +745,11 @@
       <div class="mb-3">
         <label for="TotPat" class="form-label">TotPat</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="TotPat"
           name="TotPat"
-          value="{{informe.TotPat}}"
+          value="0"
           required
         />
       </div>
@@ -747,11 +758,11 @@
       <div class="mb-3">
         <label for="TotPatPas" class="form-label">TotPatPas</label>
         <input
-          type="text"
+          type="number"
           class="form-control"
           id="TotPatPas"
           name="TotPatPas"
-          value="{{informe.TotPatPas}}"
+          value="0"
           required
         />
       </div>
